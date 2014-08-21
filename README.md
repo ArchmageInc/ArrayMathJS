@@ -43,7 +43,7 @@ var foo = [1,2,"a",4];
 console.log(foo.product());  // will output 8 (1 * 2 * 4)
 ```
 
-###Array.prototype.crossSum`([x[,y[,z[,...]]]])`###
+###Array.prototype.crossSum([x[,y[,z[,...]]]])###
 *Return Value:* array
 
 ####Parameters####
@@ -92,7 +92,7 @@ var bar     = [1,"a",3];
 console.log(foo.crossSum(bar)); // will output [2,6] (2 , 3+3)
 ```
 
-###Array.prototype.crossProduct`([x[,y[,z[,...]]]])`###
+###Array.prototype.crossProduct([x[,y[,z[,...]]]])###
 *Return Value:* array
 
 ####Parameters####
