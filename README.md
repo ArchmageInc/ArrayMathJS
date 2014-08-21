@@ -3,15 +3,15 @@ ArrayMathJS
 
 A JavaScript library implementing mathematical methods on arrays
 
-##Array.prototype.sum`()`##
+###Array.prototype.sum()###
 *Return Value:* number
 
-###Parameters###
+####Parameters####
 none
 
 Implements summation to the array. This method uses the native reduce method if it is available.
 
-###Example###
+####Examples####
 
 ```JavaScript
 var foo = [1,2,3,4];
@@ -23,15 +23,15 @@ var foo = [1,2,"a",4];
 console.log(foo.sum());  // will output 7 (1 + 2 + 4)
 ```
 
-##Array.prototype.product`()`##
+###Array.prototype.product()###
 *Return Value:* number
 
-###Parameters###
+####Parameters####
 none
 
 Implements product to the array. This method uses the native reduce method if it is available.
 
-###Example###
+####Examples####
 
 ```JavaScript
 var foo = [1,2,3,4];
@@ -43,17 +43,17 @@ var foo = [1,2,"a",4];
 console.log(foo.product());  // will output 8 (1 * 2 * 4)
 ```
 
-##Array.prototype.crossSum`([x[,y[,z[,...]]]])`##
+###Array.prototype.crossSum`([x[,y[,z[,...]]]])`###
 *Return Value:* array
 
-###Parameters###
+####Parameters####
 **x,y,z,...**
 arrays
 
 Returns an array of elements which have been added together. The source array is used for the length: meaning any arrays
 passed as parameters with a length longer than the source array, those elements will not be included in the cross sum.
 
-###Example###
+####Examples####
 
 ```JavaScript
 var foo = [1,2,3,4];
@@ -92,17 +92,17 @@ var bar     = [1,"a",3];
 console.log(foo.crossSum(bar)); // will output [2,6] (2 , 3+3)
 ```
 
-##Array.prototype.crossProduct`([x[,y[,z[,...]]]])`##
+###Array.prototype.crossProduct`([x[,y[,z[,...]]]])`###
 *Return Value:* array
 
-###Parameters###
+####Parameters####
 **x,y,z,...**
 arrays
 
 Returns an array of elements which have been multiplied together. The source array is used for the length: meaning any arrays
 passed as parameters with a length longer than the source array, those elements will not be included in the cross product.
 
-###Example###
+####Examples####
 
 ```JavaScript
 var foo = [1,2,3,4];
@@ -141,10 +141,10 @@ var bar     = [1,"a",3];
 console.log(foo.crossProduct(bar)); // will output [2,9] (2 , 3*3)
 ```
 
-##Array.prototype.productSum`([x[,y[,z[,...]]]])`##
+###Array.prototype.productSum([x[,y[,z[,...]]]])###
 *Return Value:* number
 
-###Parameters###
+####Parameters####
 **x,y,z,...**
 arrays
 
@@ -153,7 +153,7 @@ passed as parameters with a length longer than the source array, those elements 
 
 This is the same as calling array1.crossProduct.apply(array1,array2).sum()
 
-###Example###
+####Examples####
 
 ```JavaScript
 var foo = [1,2,3,4];
@@ -192,15 +192,15 @@ var bar     = [1,"a",3];
 console.log(foo.productSum(bar)); // will output 11 (2 + 3*3)
 ```
 
-##Array.prototype.max`()`##
+###Array.prototype.max()###
 *Return Value:* number
 
-###Parameters###
+####Parameters####
 none
 
 This is an implementation of Math.max.apply for the array. Be aware of non-numeric elements.
 
-###Example###
+####Examples####
 
 ```JavaScript
 var foo = [1,2,3,4];
@@ -212,15 +212,15 @@ var foo = [1,2,3,"a"];
 console.log(foo.max());  // will output NaN
 ```
 
-##Array.prototype.min`()`##
+###Array.prototype.min()###
 *Return Value:* number
 
-###Parameters###
+####Parameters####
 none
 
 This is an implementation of Math.min.apply for the array. Be aware of non-numeric elements.
 
-###Example###
+####Examples####
 
 ```JavaScript
 var foo = [1,2,3,4];
